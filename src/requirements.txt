@@ -1,0 +1,5 @@
+crewai[bedrock]
+crewai-tools
+langfuse
+python-dotenv
+boto3
