@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-agent-langfuse"
+version = "1.0.0"
+description = "A production-ready multi-agent system using CrewAI, Amazon Bedrock (Nova Pro), and LangFuse for observability"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Amir Saman", email = "amiiiirsaman@github.com"}
+]
+dependencies = [
+    "crewai[bedrock]",
+    "crewai-tools",
+    "langfuse",
+    "python-dotenv",
+    "boto3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.11.1",
+]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

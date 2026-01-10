@@ -4,6 +4,7 @@ crewai-tools
 langfuse
 python-dotenv
 boto3
+langchain-aws
 
 # Development Dependencies
 pytest>=7.4.0

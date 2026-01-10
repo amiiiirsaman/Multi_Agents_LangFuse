@@ -25,7 +25,7 @@ Final Answer with Sources
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - AWS Account with Bedrock access
 - Serper API key
 - LangFuse account
