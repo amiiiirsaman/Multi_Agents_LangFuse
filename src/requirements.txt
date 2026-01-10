@@ -1,5 +1,11 @@
+# Core Dependencies
 crewai[bedrock]
 crewai-tools
 langfuse
 python-dotenv
 boto3
+
+# Development Dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.1
