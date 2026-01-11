@@ -3,7 +3,7 @@
 Provides the orchestration of the CrewAI workflow with full LangFuse observability.
 """
 from langfuse import get_client
-from agents_and_tasks import crew
+from agents_and_tasks_v05 import crew
 from config import (
     validate_config,
     TRACE_NAME,
